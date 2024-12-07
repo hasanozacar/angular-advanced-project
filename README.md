@@ -77,6 +77,7 @@ Proje, farklı seviyelerde test stratejileri kullanarak güvenilirlik ve kalitey
       expect(userList.length).toBe(2);
     });
     ```
+<img width="1186" alt="Screenshot 2024-12-08 at 02 31 17" src="https://github.com/user-attachments/assets/95119333-1319-4ff9-ab26-a5642fbebc4f">
 
 ---
 
@@ -99,6 +100,8 @@ Proje, farklı seviyelerde test stratejileri kullanarak güvenilirlik ve kalitey
       });
     });
     ```
+<img width="1093" alt="Screenshot 2024-12-08 at 02 24 50" src="https://github.com/user-attachments/assets/e260f1d4-5c2b-48ab-9dc9-e2c797eaed1e">
+<img width="1093" alt="Screenshot 2024-12-08 at 02 24 59" src="https://github.com/user-attachments/assets/27f522fb-5668-429e-976b-6093e3a5e06f">
 
 ---
 
@@ -159,5 +162,3 @@ npm run e2e
 3. Pull request açmadan önce kodu linters ve formatlama araçlarıyla kontrol edin.
 
 ---
-
-Herhangi bir sorunuz veya öneriniz varsa [email@example.com](mailto:email@example.com) adresinden iletişime geçebilirsiniz.
