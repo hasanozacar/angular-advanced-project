@@ -1,0 +1,45 @@
+<div class="dashboard">
+  <h2>Product List</h2>
+
+  <div class="filter-container">
+    <div class="filter-field">
+      <mat-form-field appearance="fill">
+        <mat-label>Category</mat-label>
+        <mat-select
+          [(ngModel)]="selectedCategory"
+          (selectionChange)="filterProducts()"
+        >
+          <mat-option *ngFor="let category of categories" [value]="category">
+            {{ category }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="filter-field">
+      <mat-form-field appearance="fill">
+        <mat-label>Price Range</mat-label>
+        <mat-select
+          [(ngModel)]="selectedPriceRange"
+          (selectionChange)="filterProducts()"
+        >
+          <mat-option value="low">Low to High</mat-option>
+          <mat-option value="high">High to Low</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div *ngIf="products.length > 0; else noProducts" class="products-grid">
+    <div *ngFor="let product of products" class="product-card">
+      <app-card [product]="product"></app-card>
+    </div>
+  </div>
+
+  <ng-template #noProducts>
+    <p>Ürünler yüklenirken bir hata oluştu.</p>
+  </ng-template>
+
+  <button mat-icon-button (click)="goToUsers()" class="go-to-users-btn">
+    Go to Users
+  </button>
+</div>

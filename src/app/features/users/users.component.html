@@ -1,0 +1,15 @@
+<div class="back-button-container">
+  <button (click)="goBack()">Geri</button>
+</div>
+
+<div *ngIf="users && users.length > 0" class="user-list">
+  <div *ngFor="let user of users" class="user-item">
+    <h3>{{ user.name }}</h3>
+    <p>{{ user.email }}</p>
+    <p>{{ user.role }}</p>
+  </div>
+</div>
+
+<div *ngIf="!users || users.length === 0">
+  <p>Hiç kullanıcı bulunamadı.</p>
+</div>
